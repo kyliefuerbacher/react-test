@@ -1,7 +1,8 @@
-npm install
-npm install bootstrap
-npm install react-bootstrap bootstrap
-npm install axios
+# npm install
+# npm install bootstrap
+# npm install react-bootstrap bootstrap
+# npm install axios
+# npm i react-router-dom
 
 # Getting Started with Create React App
 

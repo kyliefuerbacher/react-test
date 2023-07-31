@@ -1,3 +1,40 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
+import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+//import Header from './components/Header';
+import Home from './components/HomePage';
+import UploadPage from './components/UploadPage';
+import ParkingPage from './components/ParkingPage';
+import ReviewPage from './components/ReviewPage';
+import FinalPage from './components/FinalPage';
+  
+export default function App() {
+  
+  return (
+    <>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/uploadpage" element={<UploadPage/>} />
+        <Route path="/parkingpage" element={<ParkingPage/>} />
+        <Route path="/reviewpage" element={<ReviewPage/>} />
+        <Route path="/finalpage" element={<FinalPage/>} />
+      </Routes>
+    </Router>
+
+    </>
+  );
+}
+
+
+
+/* Ibrahim's code
 // backend/app.js
 const express = require('express');
 const mongoose = require('mongoose');
@@ -33,3 +70,4 @@ app.get('/api/data', async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+*/
