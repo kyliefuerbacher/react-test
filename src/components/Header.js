@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <Navbar expand="lg" bg="primary" data-bs-theme="dark">
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand>
-            <img src={"./logo.png"}
+          <img src={"./logo.png"}
             width="183.7"
             height="71"
             className="d-inline-block align-top"
@@ -25,13 +25,7 @@ export default function Header() {
               <Link to="/uploadpage">Upload</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/parkingpage">Parking</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/reviewpage">Review</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/finalpage">Final</Link>
+              <Link to="/finalpage">View</Link>
             </Nav.Link>
           </Nav>
           <Form className="d-flex">

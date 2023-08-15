@@ -13,21 +13,21 @@ export default function DataType() {
     <div style={{ display: 'block', 
                   width: 700, 
                   padding: 30 }}>
-      <h4>Data Set Type: </h4>
+      <p>Type</p>
       <div style={{ display: 'flex'}}>
       <Dropdown>
-        <Dropdown.Toggle variant="primary">
+        <Dropdown.Toggle variant="light">
           {display}
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item href="#" onClick={() => setDisplay("Pk Study")}>
+          <Dropdown.Item onClick={() => setDisplay("Pk Study")}>
             Pk Study
           </Dropdown.Item>
-          <Dropdown.Item href="#" onClick={() => setDisplay("IVT Study")}>
+          <Dropdown.Item onClick={() => setDisplay("IVT Study")}>
             IVT Study
           </Dropdown.Item>
           <Dropdown.Divider/>
-          <Dropdown.Item href="#" onClick={showOther}>
+          <Dropdown.Item onClick={showOther}>
             Other
           </Dropdown.Item>
         </Dropdown.Menu>
